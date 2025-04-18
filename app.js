@@ -4,8 +4,8 @@ export const renderNotes = (notes) => {
                 `<div class="single-note">
                 <div class="d-flex align-center title-container">
                     <span>${title}</span>
-                <button class="button del-btn v-hidden">
-                    <span class="material-icons-outlined">delete</span>
+                <button class="button del-btn v-hidden" data-id="${id}" data-type="delete">
+                    <span class="material-icons-outlined"  data-id="${id}" data-type="delete">delete</span>
                 </button>
                 </div>
                 <p>${note}</p>
