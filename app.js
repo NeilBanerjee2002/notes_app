@@ -10,13 +10,13 @@ export const renderNotes = (notes) => {
                 </div>
                 <p>${note}</p>
                 <div class="options d-flex gap-md">
-                <button class="button btn pinned-btn v-hidden">
-                    <span class="material-icons-outlined">
+                <button class="button btn pinned-btn v-hidden" data-id="${id}" data-type="pinned">
+                    <span class="material-icons-outlined" data-id="${id}" data-type="pinned">
                         push_pin
                     </span>
                 </button>
-                <button class="button pinned-btn btn v-hidden">
-                    <span class="material-icons-outlined">
+                <button class="button pinned-btn btn v-hidden" data-id="${id}" data-type="archive">
+                    <span class="material-icons-outlined" data-id="${id}" data-type="archive">
                         archive
                     </span>
                 </button>
